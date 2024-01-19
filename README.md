@@ -82,3 +82,6 @@ In this repository you can also find:
 
 - [@TeresaCardenosa](https://www.github.com/TeresaCardenosa)
 
+![Meme de escaladores](https://github.com/TeresaCardenosa/ih_datamadpt0923_project_m2/blob/main/images/Meme_Escalada.JPG)
+
+
