@@ -1,78 +1,84 @@
-<p align="left"><img src="https://cdn-images-1.medium.com/max/184/1*2GDcaeYIx_bQAZLxWM4PsQ@2x.png"></p>
 
-# __ih_datamadpt0923_project_m2__
+# Data Climbing 🧗
 
-![Image](https://github.com/ih-datapt-mad/ih_datamadpt0923_project_m2/blob/main/images/visuals.jpg)
+The Tokyo 2020 Olympic Games marked a turning point for the sport of climbing, making it an Olympic sport for the first time. 
+Since then, climbing has been enjoying a boom, with more and more fans joining the sport. But what is the average climber's profile? 
 
-Data analytics is oftentimes referred to as business intelligence, BI development, or product analytics. However, that is just the tip of the iceberg since the data analytics process includes activities such as data formation/creation, data cleansing, exploratory data analysis (especially this part), feature engineering, and interpretation of suggestions/predictions/results derived from advanced modelling analysis (i.e.: Machine Learning).
+In this repository we will visualise the anthropometric factors of the standard climber. In addition, we standardise the degrees of ascent and difficulty in order to visualise the height and weight of climbers who reach elite and higher elite levels.
 
-For this project you will perform some of these activities in order to analyse a __dataset of your interest__.
+## Dataset
 
+For the visualisation we will use the 'Climb Dataset' shared by Jordi Zaragoza on Kaggle.
 
----
+🔗 https://www.kaggle.com/datasets/jordizar/climb-dataset 🔗
 
+This dataset contains three tables, of which we will make one of two:
 
+1⃣ Grading table: grades_conversion_table.csv 
 
-## **Deliverables:**
+Contains the numerical conversion of the grade_id towards the level standardisation in France.
 
-A GitHub repository including:
+2⃣ Climbers table: climber_df.csv 
 
-- A `data model` showing the table schemas and relations between them. You may use an application such as [DBdiagram](https://dbdiagram.io/).
-
-- A `functional design mockup` where the dashboard parts and functionalities must be represented. This document should be an starting point, meaning that the final product can be different. You may use any tool you want, however, it is highly recommended to use _ink and paper_!!!
-
-- A `BI Report/Dashboard` meeting the requeriments specified in __Challenge 1__. If you use __Tableau__ you need to include the _Tableau Public link_ to the reporting app. If you use __Power BI__ you need to include the `.pbix` file in your repo. 
-
-- A `README.md` file explaining the job done, the reporting app architecture and your main conclusions after the exploratory data analysis. You may find more info of how to build a README file [here](https://github.com/potacho/data-project-template/blob/master/README.md).
-
-
-
----
-
+It contains information on climbers. The data that are of interest for this project are:  
+- Climber identifier
+- Sex of the climber 
+- Height of climber 
+- Weight 
+- Maximum ascent grade reached 
+- Years of climbing training
 
 
-## **Presentation:**
+## Technologies 💻
 
-- __Time:__ 5 minutes __sharp__.
+EDA and Analysis: 
 
-- __Content:__ eventhough the perfect report/dashboard should be selfexplanatory, you'll need to explain the reporting architecture and show its funtionalities. Also, you'll need to give actionable insights about your data and support your arguments using the report.
+- Python version 3.10.13
+- Pandas
 
-<p align="center"><img src="https://media.giphy.com/media/1Ygis29YXMS35cW90I/giphy.gif"></p>
+Visualization:
+ 
+- Tableau Public 2023.3
 
+## Main conclusions 
 
-> __IMPORTANT NOTE:__ You only need your BI Report/Dashboard for the presentation (i.e.: no Jupyter, no PowerPoint/Canva)
+These are the main conclusions of the EDA and the visualisation: 
 
+👉 **Climbing, a sport for adults**. 
 
+The average age of the climber is 33 years old. Although we recorded younger climbers (under 20), the bulk of the data set is concentrated between the ages of 30 and 35. We even found a higher number of climbers in their 40s compared to climbers in their 20s. 
 
----
+👉 **Mostly male sport**. 
 
+In our dataset we found that 87% of climbers are male, compared to less than 13% of female climbers. 
 
+👉 **1,76m height and 67,6kg average weight**.
 
-## __Challenge 1: BI Report/Dashboard__
+In our dataset we have people with a minimum height of 1.37m and a minimum weight of 40kg, as well as a maximum height of 2.02m and a maximum weight of 93kg. 
 
-BI Reports and Dashboards are powerful tools for communicating important information __at-a-glance__. The goal of this challenge is to build a BI Report/Dashboard using a dataset of your choice. Bear in mind the __purpose__ of the report and build a __normalized__ model that fits your visualization requeriments and interactivity performance.
+👉 **Climbing, a sport that gets you hooked**.
 
-You may use either __Tableau__ or __Power BI__ as your main tool for creating your reporting app. There are not restictions about the data source location or format (local drive, database, multiformat, etc.).
-
-> __Tip:__ you should first consider which data and which indicators should be put on the BI Report/Dashboard. Then, decompose the key indicators from multiple dimensions. 
-
-<p align="center"><img src="https://media.giphy.com/media/l46Cy1rHbQ92uuLXa/giphy.gif"></p>
-
-
-A BI Report/Dashboard is not exactly a sequential set of descriptive charts. Instead, a BI Report/Dashboard should be __a single interactive interface built around a specific objetive and which components are logically arranged in order to provide data relevant insights effectively__.
-
-
-
----
+The climbers we know of have been climbing for an average of 12 years. The minimum time is one year and the maximum 29 years, although it is true that the bulk of our data is between the 50% and 75% quartile. 
 
 
 
-## **References:**
 
-- [Visual Analysis Best Practices](https://github.com/ih-datapt-mad/ih_datamadpt0923_project_m2/blob/main/images/visual-analysis-guidebook.pdf)
+## Draw your own conclusions
 
-- [Financial Times Visual Vocabulary](https://github.com/ft-interactive/chart-doctor/tree/master/visual-vocabulary)
+I invite you to visit the final visualisation published on [Tableau Public - Data Climbing](https://public.tableau.com/app/profile/teresa.carde.osa/viz/project2_data_climbing/Historia1?publish=yes) in order to draw your own conclusions. 
 
-- [Tableau](https://github.com/ih-datapt-mad/dataptmad0923_lessons/blob/main/m2/20240110_bi_tableau.md)
+I'd love to hear from you! If you want, you can also get in touch via my [LinkedIn profile](https://www.linkedin.com/in/mteresacardenosadeheras/).
 
-- [Power BI](https://github.com/ih-datapt-mad/dataptmad0923_lessons/blob/main/m2/20240113_bi_pbi.md)
+
+## Others
+
+In this repository you can also find:
+
+◾ A data model showing the table schemas and relations between them. 
+
+◾ A functional desing mockup. 
+
+## Author 👤
+
+- [@TeresaCardenosa](https://www.github.com/TeresaCardenosa)
+
